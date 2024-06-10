@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: "Outfit", arial;
+}
+
+:root {
+  --primary-color: hsl(14, 45%, 36%);
+  --secondary-color: hsl(332, 51%, 32%);
+  --fs-primary: "Young Serif" , serif;
+  --fs-secondary: "Outfit", sans-serif;
+}
+
+.container-c {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 900px;
+  
+}
+/* ##### HERO #### */
+
+.hero {
+  width: 100%;
+}
+
+h1,hf {
+  font-family: var(--fs-primary);
+  padding-top: 3rem;
+}
+
+.rosa {
+  background-color: hsl(330, 100%, 98%);
+}
+
+.rosa > h3 {
+
+  color:hsl(332, 51%, 32%);
+  padding-bottom: 0.5rem;;
+}
+
+.rosa li {
+  padding-bottom: 0.5rem;
+}
+
+.head > h2 {
+  font-family: var(--fs-primary);
+  color: var(--primary-color);
+  padding-top:2rem;
+}
+
+.ingri li {
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.steps li {
+  padding: 0.5rem 1rem;
+}
+
+ol li::marker {
+  color: var(--primary-color);
+}
+.nu td{
+  border-bottom: 1px solid black;
+  padding-left: 1rem; 
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+
+}
+
+.nu table {
+  width: 100%
+}
+
+.nu table td:last-of-type {
+
+  color: var(--primary-color);
+
+}
+
+.b-none {
+  border-bottom: none !important; 
+
+}
+
+@media (min-width:1440px) {
+
+  /* html {
+    font-size: 1.1rem;
+  } */
+
+  .hero {
+    border-radius: 30px;
+  }
+  .hero-div {
+   width:85%;
+   margin: 0 auto;
+   max-width: 900px;
+  }
+}
